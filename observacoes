@@ -1,0 +1,10 @@
+Estou dividindo os comandos em arquivos repetidos para facilitar compreensão
+
+para ver as tabelas do arquivo sem entrar no console:
+    sqlite3 banco.db '.tables'
+
+Para descrever a tabela de clientes:
+    sqlite3 banco.db 'PRAGMA table_info(clientes)'
+
+Pra ver o esquema da tabela pelo sqlite:
+    SELECT sql FROM sqlite_master WHERE type='table' AND name='clientes';
